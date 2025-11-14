@@ -1,0 +1,22 @@
+# Abstract
+
+This repository implements a statistical arbitrage pairs trading strategy based on Perry Kaufman's Stress Indicator, specifically designed for highly correlated commodity futures. The strategy employs a "triple stochastic" methodology to identify mean reversion opportunities in the relative strength relationship between two correlated assets.
+
+## Key Features
+
+- **Advanced Signal Generation**: Utilizes triple stochastic oscillator calculations to standardize spread extremity into a 0-100 scale
+- **Risk-Balanced Position Sizing**: ATR-based equal-risk exposure methodology ensures proper hedging
+- **Comprehensive Risk Management**: Dual stop-loss mechanisms including time-based and loss-based exits, plus correlation monitoring
+- **Robust Backtesting Framework**: Complete simulation engine with slippage, transaction costs, and detailed trade analytics
+- **Visualization Suite**: Equity curves, drawdown analysis, signal visualization, and position tracking
+
+## Performance Highlights
+
+Methanol-Ethylene Glycol pair, 2017-2021:
+- Annual Return: 3.48%
+- Cumulative Return: 12.71%
+- Win Rate: 58.6%
+- Max Drawdown: -23.28%
+- Average Holding Period: 4 days
+
+The strategy is particularly suited for short-term trading of highly correlated commodity pairs with correlation coefficients above 0.85.
